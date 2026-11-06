@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050b18">
+  <title>JARVIS AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand"><span class="brand-dot"></span> J.A.R.V.I.S</div>
+      <div class="status"><span class="pulse"></span> SYSTEM ONLINE</div>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow">STARK INDUSTRIES • PERSONAL AI</p>
+      <div class="reactor" id="reactor" aria-label="JARVIS core">
+        <div class="ring ring-one"></div>
+        <div class="ring ring-two"></div>
+        <div class="ring ring-three"></div>
+        <div class="core"><span>J</span></div>
+      </div>
+      <h1>Good day. <span>I'm JARVIS.</span></h1>
+      <p class="sub">Your personal voice assistant</p>
+      <div id="state" class="state">TAP THE MIC TO SPEAK</div>
+      <button id="micBtn" class="mic" aria-label="Start voice input">🎙</button>
+      <p class="hint">Allow microphone access when your browser asks.</p>
+    </section>
+
+    <section class="chat-panel">
+      <div class="panel-head">
+        <span>CONVERSATION LOG</span>
+        <button id="clearBtn" class="clear">CLEAR</button>
+      </div>
+      <div id="chat" class="chat">
+        <div class="message jarvis"><b>JARVIS</b><p>At your service. Try saying “What time is it?” or “Open YouTube”.</p></div>
+      </div>
+      <form id="chatForm" class="composer">
+        <input id="textInput" type="text" placeholder="Type a command..." autocomplete="off">
+        <button type="submit">SEND</button>
+      </form>
+    </section>
+    <footer>JARVIS AI • MOBILE PROTOTYPE 01</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
